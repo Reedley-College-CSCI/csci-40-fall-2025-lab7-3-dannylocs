@@ -4,14 +4,17 @@ using namespace std;
 
 // TODO: Step 1 - Define the struct TemperatureRecord
 // It should contain two integer fields: day and temperature.
-
+struct TemperatureRecord {
+int day;
+int temperature;
+}
 
 // Constants
 const int MAX_DAYS = 31;
 
 // Function Prototypes
-void readTemperatures(???); // TODO: Fix the parameters
-void printTemperatures(const ???);
+void readTemperatures(TemeratureRecord temps[], int size); // TODO: Fix the parameters
+void printTemperatures(const );
 TemperatureRecord findMin(const ???);
 TemperatureRecord findMax(const ???);
 double findAverage(const ???);
@@ -44,3 +47,4 @@ int main() {
 
 // TODO: Step 10 - Implement findAverage()
 // Compute and return the average temperature
+
