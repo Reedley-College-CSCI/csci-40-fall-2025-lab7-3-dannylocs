@@ -61,6 +61,12 @@ void readTemperatures(TemperatureRecord records[], int& size) {
         return;
         
     }
+while (size < MAX_DAYS && (inFS >> records[size].day >> records[size].temperature)) {
+++size;
+}
+inFS.close();
+
+}
 // TODO: Step 7 - Implement printTemperatures()
 
 
@@ -74,6 +80,7 @@ void readTemperatures(TemperatureRecord records[], int& size) {
 
 // TODO: Step 10 - Implement findAverage()
 // Compute and return the average temperature
+
 
 
 
