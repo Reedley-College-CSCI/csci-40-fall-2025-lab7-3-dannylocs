@@ -53,8 +53,17 @@ double avg = findAverage(record, size);
 
 // TODO: Step 6 - Implement readTemperatures()
 // Read from "temps.txt" and store data in the array
-
+void readTemperatures(TemperatureRecord records[], int& size) {
+    ifstream inFS("temps.txt");
+    size = 0;
+    if (!inFS.is_open()) {
+        cerr << "Error: could not open temps.txt" << endl;
+        return;
+        
+    }
 // TODO: Step 7 - Implement printTemperatures()
+
+
 // Print all stored temperatures in a formatted table
 
 // TODO: Step 8 - Implement findMin()
@@ -65,6 +74,7 @@ double avg = findAverage(record, size);
 
 // TODO: Step 10 - Implement findAverage()
 // Compute and return the average temperature
+
 
 
 
