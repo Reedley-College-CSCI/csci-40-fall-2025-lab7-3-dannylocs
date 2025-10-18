@@ -30,10 +30,21 @@ readTemperatures(records, size);
 printTemperatures(records, size);
     
     // TODO: Step 5 - Compute and display min, max, and average temperature
+    if (size > 0 ) {
 TemperatureRecord minRec = findMin(records, size);
 TemperatureRecord maxRec = findMax(records, size);
 double avg = findAverage(record, size);
-   
+
+     cout << "  summary  ";
+    cout << " ---------- ";
+    cout << "Min Day: " << minRec.day << " Temp: " << minRec.temperature << endl;
+    cout << "Max Day: " << maxRec.day << " Temp: " << maxRec.temperature << endl;
+    cout << "Average: " << avg << endl;
+    } 
+    else {
+        cout << "No data found in temps.txt ";
+        
+    }   
     
     
     return 0;
@@ -54,6 +65,7 @@ double avg = findAverage(record, size);
 
 // TODO: Step 10 - Implement findAverage()
 // Compute and return the average temperature
+
 
 
 
