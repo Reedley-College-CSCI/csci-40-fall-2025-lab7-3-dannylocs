@@ -25,12 +25,19 @@ int main() {
     int size = 0;  // Actual number of records read
 
     // TODO: Step 3 - Call readTemperatures() to load data from file
-
+readTemperatures(records, size);
     // TODO: Step 4 - Print the temperatures
-
+printTemperatures(records, size);
+    
     // TODO: Step 5 - Compute and display min, max, and average temperature
-
+TemperatureRecord minRec = findMin(records, size);
+TemperatureRecord maxRec = findMax(records, size);
+double avg = findAverage(record, size);
+   
+    
+    
     return 0;
+    
 }
 
 // TODO: Step 6 - Implement readTemperatures()
@@ -47,5 +54,6 @@ int main() {
 
 // TODO: Step 10 - Implement findAverage()
 // Compute and return the average temperature
+
 
 
