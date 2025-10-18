@@ -13,15 +13,15 @@ int temperature;
 const int MAX_DAYS = 31;
 
 // Function Prototypes
-void readTemperatures(TemeratureRecord temps[], int size); // TODO: Fix the parameters
-void printTemperatures(const );
-TemperatureRecord findMin(const ???);
-TemperatureRecord findMax(const ???);
-double findAverage(const ???);
+void readTemperatures(TemperatureRecord records[], int size); // TODO: Fix the parameters
+void printTemperatures(const TemperatureRecord records[], int size );
+TemperatureRecord findMin(const TempratureRecord records[], int size);
+TemperatureRecord findMax(const TempratureRecord records[], int size);
+double findAverage(const TempratureRecord records, int size);
 
 int main() {
     // TODO: Step 2 - Declare an array of TemperatureRecord structs (MAX_DAYS size)
-    
+    TemperatureRecord records[MAX_DAYS];
     int size = 0;  // Actual number of records read
 
     // TODO: Step 3 - Call readTemperatures() to load data from file
@@ -47,4 +47,5 @@ int main() {
 
 // TODO: Step 10 - Implement findAverage()
 // Compute and return the average temperature
+
 
